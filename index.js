@@ -69,20 +69,21 @@ console.log(reviews[5].feedback);
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
-const myReview = (obj, name, rating, feedback) => {
-  obj.push({name, rating, feedback});
-  return obj;
+const myReview = (objs, name, rating, feedback) => {
+  objs.push({name, rating, feedback});
+  return objs;
 }
 
 console.log(myReview(reviews, "AJ", 3.7, "It was very exquiste."))
 
 
-/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
+/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays" */
 
-
-
-
-
+const edit = () => {
+  reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
+}
+edit();
+console.log(reviews[7]);
 
 
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
