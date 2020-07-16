@@ -18,3 +18,6 @@ We access the object by array[index]
 
 We access the key by: 
 array[index].key
+
+Task 6
+

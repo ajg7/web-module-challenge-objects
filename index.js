@@ -85,7 +85,6 @@ const edit = () => {
 edit();
 console.log(reviews[7]);
 
-
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
 
  Your function should take two arguments:
@@ -98,10 +97,11 @@ and should return a string in the format `{name} gave the restaurant a {rating},
  * For example, if getReviewByIndex is invoked with reviews and the number 0
  * it will return `Daniela gave the restaurant a 5 star review and their feedback was: Beautiful atmosphere and wonderful vegan options!`
 */
-function getReviewByIndex(reviews, index) {
-    /* code here */
+function getReviewByIndex(arr, index, str) {
+    str = `${arr[index].name} gave the restaurant a ${arr[index].rating}, and their feedback was: ${arr[index].feedback}`
+    return str;
   }
-  
+console.log(getReviewByIndex(reviews, 0));
 
 /* Task 7: Write a function to get information about the most recent review called `getLastReview`
 
